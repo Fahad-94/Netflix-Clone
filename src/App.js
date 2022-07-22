@@ -1,23 +1,62 @@
-import logo from './logo.svg';
 import './App.css';
+import Row from './components/Row';
+import Header from './components/Header';
+import Nav from './components/Nav';
+import Footer from './components/Footer';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Nav />
+        <Header />
+        
+        <Row 
+        title = 'Netflix Originals'
+        type = 'netflixOriginals'
+        />
+
+        <Row 
+        title = 'Trending'
+        type = 'trending'
+        />
+
+        <Row 
+        title = 'Top Rated'
+        type = 'topRated'
+        />
+
+        <Row 
+        title = 'Action Movies'
+        type = 'actionMovies'
+        />
+
+        <Row 
+        title = 'Comedy Movies'
+        type = 'comedyMovies'
+        />
+
+        <Row 
+        title = 'Horror Movies'
+        type = 'horrorMovies'
+        />
+
+        <Row 
+        title = 'Science Fiction Movies'
+        type = 'scienceFiction'
+        />
+
+        <Row 
+        title = 'Romance Movies'
+        type = 'romanceMovies'
+        />
+
+        <Row 
+        title = 'Documentaries'
+        type = 'documentaries'
+        />
+
+        <Footer />
     </div>
   );
 }
